@@ -1,3 +1,9 @@
+/* Estilos globales */
+body {
+  color: #fff;
+  background-color: rgb(23, 20, 43);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,146 +11,128 @@
   text-align: center;
 }
 
-/* Estilos personalizados para la página LandingPage */
-
-body {
-  color: #fff;
-  /* Fuentes en blanco */
-  background-color: #000;
-  /* Fondo en negro */
+h1 {
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+  font-size: 55px;
 }
 
+img {
+  width: 12rem;
+}
+/* Estilos de navegación */
 .navbar {
-  background-color: #333 !important;
-  /* Barra de navegación en tono oscuro */
+  background-color:  rgb(38, 33, 72) !important;
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
   color: #fff;
-  /* Texto en blanco para elementos de navegación */
 }
-
-.container {
-  color: #ccc;
-  /* Color de fuente en contenedores */
+.navbar-brand:hover {
+  color: #8a8a8a;
 }
-
+/* Estilos de contenedores y enlaces */
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, #1e1a37, #242044, #382e67, #564a8c, #56478c);
+}
+.container,
 a {
   color: #ccc;
-  /* Color de enlace predeterminado */
 }
 
 a:hover {
-  color: #fff;
-  /* Color de enlace al pasar el cursor */
+  color: white;
 }
 
+/* Estilos del pie de página */
 .footer {
-  background-color: #222 !important;
-  /* Fondo del pie de página en tono más oscuro */
+  background-color: rgb(38, 33, 72);
 }
 
 .text-muted {
   color: #ccc;
-  /* Texto de pie de página en tono más claro */
 }
 
-/* Estilos personalizados para el componente GameSearch */
+/* Estilos de componentes específicos */
 
-.container {
-  margin-top: 20px;
-  /* Margen superior */
-}
+/* Estilos de la página About */
 #about {
-  background-color: #222;
-}
-.form-control {
-  background-color: #333;
-  /* Color de fondo */
-  color: #ccc;
-  /* Color del texto */
+  background-color: rgb(50, 43, 94);
 }
 
+/* Estilos del formulario y controles */
+.form-control ::placeholder {
+  background-color:rgb(38, 33, 72);
+}
+
+.custom-select {
+  color: #ffffff;
+  background-color:  rgb(50, 43, 94);
+  border-color: #ffffff;
+}
+
+.custom-select:focus {
+  border-color: #222;
+  box-shadow: 0 0 0 0.2rem rgba(8, 9, 9, 0.25);
+}
+
+.custom-select option {
+  color: #ffffff;
+  background-color:  rgb(23, 20, 43);
+}
+
+/* Estilos de alertas y spinner */
 .alert {
   margin-top: 10px;
-  /* Margen superior */
 }
 
 .spinner-border {
   margin-top: 20px;
-  /* Margen superior */
 }
 
+/* Estilos de tarjetas y paginación */
 .card {
-  background-color: #222;
-  /* Color de fondo de las tarjetas */
-  color: #ccc;
-  /* Color del texto */
-  border: 1px solid #333;
-  /* Borde estilizado */
+  background-color: rgb(50, 43, 94);
+  border: 2px solid gray;
   border-radius: 8px;
-  /* Radio de borde */
   margin-bottom: 20px;
-  /* Margen inferior */
 }
 
 .card-title {
   color: #fff;
-  /* Color del título de la tarjeta */
 }
 
 .card-text {
-  color: #ccc;
-  /* Color del texto de la tarjeta */
+  color: #fff;
 }
 
 .pagination {
   margin-top: 20px;
-  /* Margen superior */
 }
 
 .page-link {
-  background-color: #333;
-  /* Color de fondo de los botones de página */
+  background-color: rgb(50, 43, 94);
   color: #fff;
-  /* Color del texto de los botones de página */
 }
 
 .page-link:hover {
-  background-color: #555;
-  /* Color de fondo al pasar el cursor sobre los botones de página */
+  background-color: rgb(38, 33, 72);
 }
 
 .page-item.disabled .page-link {
   opacity: 0.5;
-  /* Opacidad de los botones de página desactivados */
 }
 
 .page-item.active .page-link {
-  background-color: #555;
-  /* Color de fondo del botón de página activo */
+  background-color:rgb(23, 20, 43);
   border-color: #555;
-  /* Color del borde del botón de página activo */
 }
 
+/* Iconos y placeholders personalizados */
 .icon {
   margin-right: 5px;
-  /* Espacio entre el icono y el texto */
-}
-
-.custom-select {
-  color: #ffffff; /* Color del texto */
-  background-color: #222; /* Color de fondo */
-  border-color: #ffffff; /* Color del borde */
-}
-
-.custom-select:focus {
-  border-color: #222; /* Color del borde al tener foco */
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al tener foco */
-}
-
-.custom-select option {
-  color: #ffffff; /* Color del texto de las opciones */
-  background-color: #222; /* Color de fondo de las opciones */
 }

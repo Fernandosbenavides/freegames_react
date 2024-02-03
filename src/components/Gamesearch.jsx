@@ -1,12 +1,23 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { FaGamepad, FaTags, FaShieldAlt, FaChess,FaSpaceShuttle,FaUserPlus } from "react-icons/fa";
-import { GiAura, GiCrossedSwords,GiPistolGun,GiFairyWand ,GiCardRandom,GiBoxingGlove,GiSoccerBall} from "react-icons/gi";
+import {
+  FaGamepad,
+  FaShieldAlt,
+  FaChess,
+  FaSpaceShuttle,
+  FaUserPlus,
+} from "react-icons/fa";
+import {
+  GiAura,
+  GiCrossedSwords,
+  GiPistolGun,
+  GiFairyWand,
+  GiCardRandom,
+  GiBoxingGlove,
+  GiSoccerBall,
+} from "react-icons/gi";
 import { AiOutlineAim } from "react-icons/ai";
 import { IoCarSport } from "react-icons/io5";
-
-
-
 
 const GameSearch = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -77,18 +88,19 @@ const GameSearch = () => {
   }, [searchTerm, searchResults, sortBy, filterByGenre]);
   const genreIcons = {
     MMORPG: <GiCrossedSwords />,
+    ARPG: <GiCrossedSwords />,
     MMOARPG: <GiCrossedSwords />,
-    Shooter: <AiOutlineAim  />,
+    Shooter: <AiOutlineAim />,
     MOBA: <FaShieldAlt />,
     Anime: <GiAura />,
     "Battle Royale": <GiPistolGun />,
     Strategy: <FaChess />,
-    Fantasy: <GiFairyWand   />,
-    "Sci-Fi": <FaSpaceShuttle  />,
+    Fantasy: <GiFairyWand />,
+    "Sci-Fi": <FaSpaceShuttle />,
     "Card Games": <GiCardRandom />,
     Racing: <IoCarSport />,
     Fighting: <GiBoxingGlove />,
-    Social: <FaUserPlus/>,
+    Social: <FaUserPlus />,
     Sports: <GiSoccerBall />,
   };
   const indexOfLastGame = currentPage * gamesPerPage;
@@ -146,7 +158,7 @@ const GameSearch = () => {
           <strong>Buscar:</strong>
           <input
             type="text"
-            className="form-control"
+            className="form-control color"
             placeholder="Escribe Nombre, Categoría o Plataforma...."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -212,20 +224,14 @@ const GameSearch = () => {
                 <p className="card-text">{game.short_description}</p>
                 <p className="card-text">
                   <strong>
-                    <span className="icon">
-                      <FaGamepad />
-                    </span>
-                    Plataformas:
+                    <FaGamepad /> <span></span>Plataformas:
                   </strong>{" "}
                   {game.platform}
                 </p>
                 <p className="card-text">
                   <strong>
                     {" "}
-                    <span className="icon">
-                      {genreIcons[game.genre]} {/* Muestra el icono del género */}
-                    </span>
-                    Género:
+                    {genreIcons[game.genre]} <span></span> Género:
                   </strong>{" "}
                   {game.genre}
                 </p>
