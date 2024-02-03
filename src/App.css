@@ -4,3 +4,147 @@
   padding: 2rem;
   text-align: center;
 }
+
+/* Estilos personalizados para la página LandingPage */
+
+body {
+  color: #fff;
+  /* Fuentes en blanco */
+  background-color: #000;
+  /* Fondo en negro */
+}
+
+.navbar {
+  background-color: #333 !important;
+  /* Barra de navegación en tono oscuro */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff;
+  /* Texto en blanco para elementos de navegación */
+}
+
+.container {
+  color: #ccc;
+  /* Color de fuente en contenedores */
+}
+
+a {
+  color: #ccc;
+  /* Color de enlace predeterminado */
+}
+
+a:hover {
+  color: #fff;
+  /* Color de enlace al pasar el cursor */
+}
+
+.footer {
+  background-color: #222 !important;
+  /* Fondo del pie de página en tono más oscuro */
+}
+
+.text-muted {
+  color: #ccc;
+  /* Texto de pie de página en tono más claro */
+}
+
+/* Estilos personalizados para el componente GameSearch */
+
+.container {
+  margin-top: 20px;
+  /* Margen superior */
+}
+#about {
+  background-color: #222;
+}
+.form-control {
+  background-color: #333;
+  /* Color de fondo */
+  color: #ccc;
+  /* Color del texto */
+}
+
+.alert {
+  margin-top: 10px;
+  /* Margen superior */
+}
+
+.spinner-border {
+  margin-top: 20px;
+  /* Margen superior */
+}
+
+.card {
+  background-color: #222;
+  /* Color de fondo de las tarjetas */
+  color: #ccc;
+  /* Color del texto */
+  border: 1px solid #333;
+  /* Borde estilizado */
+  border-radius: 8px;
+  /* Radio de borde */
+  margin-bottom: 20px;
+  /* Margen inferior */
+}
+
+.card-title {
+  color: #fff;
+  /* Color del título de la tarjeta */
+}
+
+.card-text {
+  color: #ccc;
+  /* Color del texto de la tarjeta */
+}
+
+.pagination {
+  margin-top: 20px;
+  /* Margen superior */
+}
+
+.page-link {
+  background-color: #333;
+  /* Color de fondo de los botones de página */
+  color: #fff;
+  /* Color del texto de los botones de página */
+}
+
+.page-link:hover {
+  background-color: #555;
+  /* Color de fondo al pasar el cursor sobre los botones de página */
+}
+
+.page-item.disabled .page-link {
+  opacity: 0.5;
+  /* Opacidad de los botones de página desactivados */
+}
+
+.page-item.active .page-link {
+  background-color: #555;
+  /* Color de fondo del botón de página activo */
+  border-color: #555;
+  /* Color del borde del botón de página activo */
+}
+
+.icon {
+  margin-right: 5px;
+  /* Espacio entre el icono y el texto */
+}
+
+.custom-select {
+  color: #ffffff; /* Color del texto */
+  background-color: #222; /* Color de fondo */
+  border-color: #ffffff; /* Color del borde */
+}
+
+.custom-select:focus {
+  border-color: #222; /* Color del borde al tener foco */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al tener foco */
+}
+
+.custom-select option {
+  color: #ffffff; /* Color del texto de las opciones */
+  background-color: #222; /* Color de fondo de las opciones */
+}
