@@ -1,5 +1,5 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaDiscord, FaEnvelope } from "react-icons/fa";
-import GameSearch from "./Gamesearch";
+import GameList from "./GameList";;
 
 const LandingPage = () => {
   return (
@@ -44,12 +44,12 @@ const LandingPage = () => {
         </nav>
       </header>
       <div className="title-container mt-4 mb-4 p-2">
-        <img src="src\assets\tittleimg.png" alt="imagen de titulo 1" />
+        <img src="src\assets\img\tittleimg.png" alt="imagen de titulo 1" />
         <h1 className="mt-5 mb-4">Bienvenido a FreeToGames</h1>
         <img src="src\assets\img\tittleimg2.png" alt="imagen de titulo 2" />
       </div>
       <strong>Encuentra juegos gratuitos para PC y Navegador</strong>
-      <div className="mt-4 mb-5"><GameSearch /></div>
+      <div className="mt-4 mb-5"><GameList /></div>
       <section id="about" className="py-5">
         <div className="container">
           <h2 className="text-center mb-4">Acerca de FreeToGames</h2>
@@ -79,7 +79,7 @@ const LandingPage = () => {
         </div>
         <div className="container text-center">
           <span>
-            © 2024 FreeToGames. Todos los derechos reservados.
+            © 2024 Fernando Sepúlveda. Todos los derechos reservados.
           </span>
         </div>
       </footer>
