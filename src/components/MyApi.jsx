@@ -27,7 +27,7 @@ const MyApi = ({ setSearchResults, setError }) => {
     setLoading(false);
   }, [setSearchResults, setError]);
 
-  useEffect(() => {
+  useEffect(() => {-
     fetchGames();
   }, []);
 

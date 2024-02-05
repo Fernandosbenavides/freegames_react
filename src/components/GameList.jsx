@@ -132,7 +132,7 @@ const GameList = () => {
             <option value="Strategy">Strategy</option>
             <option value="Fantasy">Fantasy</option>
             <option value="Sci-Fi">Sci-Fi</option>
-            <option value="Card Games">Card Games</option>
+            <option value="Card Game">Card Game</option>
             <option value="Racing">Racing</option>
             <option value="Fighting">Fighting</option>
             <option value="Social">Social</option>
